@@ -7,7 +7,8 @@ export async function POST(request) {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer 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", 
+        // 👈 کلید سخت‌افزاری حذف شد و حالا از فایل .env.local خوانده می‌شود
+        "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`, 
         "Content-Type": "application/json",
         "HTTP-Referer": "http://localhost:3000",
         "X-Title": "MyChat"
