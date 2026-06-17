@@ -1,5 +1,5 @@
-# Stage 1: Base image
-FROM node:18-alpine AS base
+# Stage 1: Base image (نسخه نود به 20 ارتقا یافت تا با نکست‌جی‌اس جدید سازگار شود)
+FROM node:20-alpine AS base
 
 # Stage 2: Install dependencies
 FROM base AS deps
